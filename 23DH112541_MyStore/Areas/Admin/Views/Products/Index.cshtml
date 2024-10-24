@@ -5,6 +5,15 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
+<head>
+    <style>
+        img{
+            height: 150px;
+            max-width: 150px;
+        }
+    </style>
+</head>
+
 <h2 class="bg-success container-fluid">DANH SÁCH SẢN PHẨM</h2>
 
 <table class="table bg-info col-lg-12 container-fluid">
@@ -20,8 +29,8 @@
     {
         <tr>
             <td>@Html.DisplayFor(modelItem => item.ProductName)</td>
-            <td>@Html.DisplayFor(modelItem => item.ProductImage)</td>
-            <td>@Html.DisplayFor(modelItem => item.ProductPrice)></td>
+            <td> <img src="@Html.DisplayFor(modelItem => item.ProductImage)" /></td>
+            <td>@Html.DisplayFor(modelItem => item.ProductPrice)</td>
             <td>@Html.DisplayFor(modelItem => item.Category.CategoryName)</td>
             <td>
                 @Html.ActionLink("Sửa", "Edit", new { id = item.ProductID }, new { @class = "btn btn-primary btn-sm" })
