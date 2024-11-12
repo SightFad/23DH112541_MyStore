@@ -190,6 +190,7 @@
     <Compile Include="Models\ViewModel\LoginVM.cs" />
     <Compile Include="Models\ViewModel\ProductDetailsVM.cs" />
     <Compile Include="Models\ViewModel\ProductSearchVM.cs" />
+    <Compile Include="Models\ViewModel\RegisterVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
